@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/conf/routes
-// @DATE:Mon Feb 22 14:19:11 MST 2021
+// @DATE:Mon Feb 22 16:48:07 MST 2021
 
 package router
 
@@ -15,7 +15,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:7
   HomeController_1: controllers.HomeController,
-  // @LINE:24
+  // @LINE:22
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -24,7 +24,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:7
     HomeController_1: controllers.HomeController,
-    // @LINE:24
+    // @LINE:22
     Assets_0: controllers.Assets
   ) = this(errorHandler, HomeController_1, Assets_0, "/")
 
@@ -45,7 +45,6 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """query3""", """controllers.HomeController.query3()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """query4""", """controllers.HomeController.query4()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.HomeController.loginHandler()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signup()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """response""", """controllers.HomeController.queryOneHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     Nil
@@ -164,28 +163,10 @@ class Routes(
   )
 
   // @LINE:19
-  private[this] lazy val controllers_HomeController_signup6_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup")))
-  )
-  private[this] lazy val controllers_HomeController_signup6_invoker = createInvoker(
-    HomeController_1.signup(),
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.HomeController",
-      "signup",
-      Nil,
-      "GET",
-      this.prefix + """signup""",
-      """""",
-      Seq()
-    )
-  )
-
-  // @LINE:21
-  private[this] lazy val controllers_HomeController_queryOneHandler7_route = Route("GET",
+  private[this] lazy val controllers_HomeController_queryOneHandler6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("response")))
   )
-  private[this] lazy val controllers_HomeController_queryOneHandler7_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_queryOneHandler6_invoker = createInvoker(
     HomeController_1.queryOneHandler(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -199,11 +180,11 @@ class Routes(
     )
   )
 
-  // @LINE:24
-  private[this] lazy val controllers_Assets_at8_route = Route("GET",
+  // @LINE:22
+  private[this] lazy val controllers_Assets_at7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at8_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at7_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -257,21 +238,15 @@ class Routes(
       }
   
     // @LINE:19
-    case controllers_HomeController_signup6_route(params@_) =>
+    case controllers_HomeController_queryOneHandler6_route(params@_) =>
       call { 
-        controllers_HomeController_signup6_invoker.call(HomeController_1.signup())
+        controllers_HomeController_queryOneHandler6_invoker.call(HomeController_1.queryOneHandler())
       }
   
-    // @LINE:21
-    case controllers_HomeController_queryOneHandler7_route(params@_) =>
-      call { 
-        controllers_HomeController_queryOneHandler7_invoker.call(HomeController_1.queryOneHandler())
-      }
-  
-    // @LINE:24
-    case controllers_Assets_at8_route(params@_) =>
+    // @LINE:22
+    case controllers_Assets_at7_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at8_invoker.call(Assets_0.at(path, file))
+        controllers_Assets_at7_invoker.call(Assets_0.at(path, file))
       }
   }
 }

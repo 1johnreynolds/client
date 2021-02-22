@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/conf/routes
-// @DATE:Mon Feb 22 14:19:11 MST 2021
+// @DATE:Mon Feb 22 16:48:07 MST 2021
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -38,16 +38,6 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:19
-    def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.signup",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signup"})
-        }
-      """
-    )
-  
     // @LINE:11
     def query2: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.query2",
@@ -68,7 +58,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:19
     def queryOneHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.queryOneHandler",
       """
@@ -100,7 +90,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:24
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -108,7 +98,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:24
+    // @LINE:22
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """

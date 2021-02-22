@@ -15,15 +15,15 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-object response extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+object response extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(message: String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
+Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -44,7 +44,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Play Setup Demo</strong>
+                <strong>Response</strong>
             </h1>
         </header>
 
@@ -52,20 +52,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
         <div class="row">
             <div class="card col s4 offset-s4 ">
                 <div class="card-panel">
-                    <form action=""""),_display_(/*30.36*/routes/*30.42*/.HomeController.queryOneHandler()),format.raw/*30.73*/("""" method="GET">
-
-                        <div class="row">
-                            <div class="input-field col s12">
-
-                                <input id="username" name="username" type="text" class="validate">
-                                <label for="username">Username</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
-                        </div>
-
-                    </form>
+                    <form> """),_display_(/*31.29*/message),format.raw/*31.36*/(""" """),format.raw/*31.37*/("""</form>
                 </div>
             </div>
         </div>
@@ -76,9 +63,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(message:String): play.twirl.api.HtmlFormat.Appendable = apply(message)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (message) => apply(message)
 
   def ref: this.type = this
 
@@ -87,11 +74,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-02-22T13:51:31.759
+                  DATE: 2021-02-22T16:54:02.487
                   SOURCE: C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/app/views/response.scala.html
-                  HASH: 857140814fc77d3e9cd3ff5354062874d4eb0332
-                  MATRIX: 814->0|2402->1563|2417->1569|2469->1600
-                  LINES: 26->1|55->30|55->30|55->30
+                  HASH: 0bf0638ac661d6a5b79df540961ba7f6e436e52e
+                  MATRIX: 732->1|843->19|2417->1568|2445->1575|2474->1576
+                  LINES: 21->1|26->2|55->31|55->31|55->31
                   -- GENERATED --
               */
           

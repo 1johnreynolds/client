@@ -18,12 +18,6 @@ public class HomeController extends Controller {
         return ok(views.html.login.render());
     }
 
-    /**
-     * Index page
-     */
-    public Result signup() {
-        return ok(views.html.response.render());
-    }
 
     /**
      * handle login
@@ -49,14 +43,14 @@ public class HomeController extends Controller {
     }
 
     /**
-     * handle login
+     * handle query
      */
     public Result queryOneHandler() {
 
         String title = request().getQueryString("title");
         if (title != null) {
 
-            return ok(title);
+            return ok(views.html.response.render(title));
             
         }
 

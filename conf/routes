@@ -16,8 +16,6 @@ GET     /query4                    controllers.HomeController.query4()
 
 GET     /login                     controllers.HomeController.loginHandler()
 
-GET     /signup                     controllers.HomeController.signup()
-
 GET     /response                    controllers.HomeController.queryOneHandler()
 
 # Map static resources from the /public folder to the /assets URL path
