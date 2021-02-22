@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccedc1b1-c9f3-4b33-8019-4ffbf616e5f1" name="Default Changelist" comment="" />
+    <list default="true" id="ccedc1b1-c9f3-4b33-8019-4ffbf616e5f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/views/query1.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/query1.scala.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +26,7 @@
     </projectState>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="1e04a183-631d-4da5-b8d2-7822e5b4d6fb" />
   <component name="MavenImportPreferences">
@@ -188,7 +190,7 @@
       <workItem from="1580274672590" duration="2140000" />
       <workItem from="1613436439127" duration="317000" />
       <workItem from="1614014314209" duration="249000" />
-      <workItem from="1614016310431" duration="13130000" />
+      <workItem from="1614016310431" duration="14561000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit Advance requirement 4,5">
       <created>1573100508310</created>

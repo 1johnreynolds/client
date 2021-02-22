@@ -52,7 +52,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
         <div class="row">
             <div class="card col s4 offset-s4 ">
                 <div class="card-panel">
-                    <form action=""""),_display_(/*30.36*/routes/*30.42*/.HomeController.queryOneHandler()),format.raw/*30.73*/("""" method="GET">
+                    <form action=""""),_display_(/*30.36*/routes/*30.42*/.HomeController.queryOneHandler()),format.raw/*30.75*/("""" method="GET">
                         <h6> <b>Query 1:</b>
                             <br>Given a paper name (i.e., title), list its publication metadata.</h6>
                         <div class="row">
@@ -88,10 +88,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-02-22T13:51:31.737
+                  DATE: 2021-02-22T16:27:59.656
                   SOURCE: C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/app/views/query1.scala.html
-                  HASH: 8c5392a8db8eebdcd96645b6e5c5205ddb5ecfa6
-                  MATRIX: 812->0|2384->1547|2399->1553|2451->1584
+                  HASH: 47d421808be3f8911034dde144398f1b4a7fed0c
+                  MATRIX: 812->0|2384->1547|2399->1553|2453->1586
                   LINES: 26->1|55->30|55->30|55->30
                   -- GENERATED --
               */
