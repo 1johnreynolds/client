@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/conf/routes
-// @DATE:Mon Feb 22 16:48:07 MST 2021
+// @DATE:Sat Feb 27 14:32:08 MST 2021
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -24,6 +24,20 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "query3"})
+        }
+      """
+    )
+  
+    // @LINE:7
+    def querySelectionHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.querySelectionHandler",
+      """
+        function() {
+        
+          if (true) {
+            return _wA({method:"GET", url:"""" + _prefix + """"})
+          }
+        
         }
       """
     )
@@ -64,26 +78,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "response"})
-        }
-      """
-    )
-  
-    // @LINE:17
-    def loginHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.loginHandler",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
-        }
-      """
-    )
-  
-    // @LINE:7
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
         }
       """
     )

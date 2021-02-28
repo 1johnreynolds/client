@@ -12,34 +12,10 @@ import utils.HttpUtil;
 public class HomeController extends Controller {
 
     /**
-     * Index page
+     * handle querySelection
      */
-    public Result index() {
-        return ok(views.html.login.render());
-    }
-
-
-    /**
-     * handle login
-     */
-    public Result loginHandler() {
-
-        String title = request().getQueryString("title");
-        if (title != null) {
-
-            String url = "/login?title=" + title;
-            HttpResponse response = HttpUtil.makeRequest(url, "GET", null);
-            if (response.getStatusCode() == 200) {
-                return ok(views.html.index.render(response.getResponse()));
-            }
-
-            return ok(views.html.login.render());
-
-        } else {
-            return ok(views.html.login.render());
-        }
-
-
+    public Result querySelectionHandler() {
+        return ok(views.html.querySelection.render());
     }
 
     /**
@@ -48,12 +24,9 @@ public class HomeController extends Controller {
     public Result queryOneHandler() {
 
         String title = request().getQueryString("title");
-        if (title != null) {
-
+        if (title != "") {
             return ok(views.html.response.render(title));
-            
         }
-
         return ok("failed");
     }
 

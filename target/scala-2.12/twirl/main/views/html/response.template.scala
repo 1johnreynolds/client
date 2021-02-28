@@ -52,7 +52,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <div class="row">
             <div class="card col s4 offset-s4 ">
                 <div class="card-panel">
-                    <form> """),_display_(/*31.29*/message),format.raw/*31.36*/(""" """),format.raw/*31.37*/("""</form>
+                    <form> Welcome """),_display_(/*31.37*/message),format.raw/*31.44*/(""" """),format.raw/*31.45*/("""</form>
                 </div>
             </div>
         </div>
@@ -74,10 +74,10 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-02-22T16:54:02.487
+                  DATE: 2021-02-27T10:17:34.397
                   SOURCE: C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/app/views/response.scala.html
-                  HASH: 0bf0638ac661d6a5b79df540961ba7f6e436e52e
-                  MATRIX: 732->1|843->19|2417->1568|2445->1575|2474->1576
+                  HASH: 54f91b65bbb32dcd2dbca5e8cfd50589e6d6b83d
+                  MATRIX: 732->1|843->19|2425->1576|2453->1583|2482->1584
                   LINES: 21->1|26->2|55->31|55->31|55->31
                   -- GENERATED --
               */

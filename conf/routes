@@ -4,7 +4,7 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index()
+GET     /                          controllers.HomeController.querySelectionHandler()
 
 GET     /query1                    controllers.HomeController.query1()
 
@@ -14,9 +14,9 @@ GET     /query3                    controllers.HomeController.query3()
 
 GET     /query4                    controllers.HomeController.query4()
 
-GET     /login                     controllers.HomeController.loginHandler()
+GET     /querySelection            controllers.HomeController.querySelectionHandler()
 
-GET     /response                    controllers.HomeController.queryOneHandler()
+GET     /response                  controllers.HomeController.queryOneHandler()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file           controllers.Assets.at(path="/public", file)

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/conf/routes
-// @DATE:Mon Feb 22 16:48:07 MST 2021
+// @DATE:Sat Feb 27 14:32:08 MST 2021
 
 
 package router {

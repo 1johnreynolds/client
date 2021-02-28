@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/conf/routes
-// @DATE:Mon Feb 22 16:48:07 MST 2021
+// @DATE:Sat Feb 27 14:32:08 MST 2021
 
 package router
 
@@ -39,12 +39,12 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.HomeController.index()"""),
+    ("""GET""", this.prefix, """controllers.HomeController.querySelectionHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """query1""", """controllers.HomeController.query1()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """query2""", """controllers.HomeController.query2()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """query3""", """controllers.HomeController.query3()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """query4""", """controllers.HomeController.query4()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.HomeController.loginHandler()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """querySelection""", """controllers.HomeController.querySelectionHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """response""", """controllers.HomeController.queryOneHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     Nil
@@ -55,15 +55,15 @@ class Routes(
 
 
   // @LINE:7
-  private[this] lazy val controllers_HomeController_index0_route = Route("GET",
+  private[this] lazy val controllers_HomeController_querySelectionHandler0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_1.index(),
+  private[this] lazy val controllers_HomeController_querySelectionHandler0_invoker = createInvoker(
+    HomeController_1.querySelectionHandler(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "index",
+      "querySelectionHandler",
       Nil,
       "GET",
       this.prefix + """""",
@@ -145,18 +145,18 @@ class Routes(
   )
 
   // @LINE:17
-  private[this] lazy val controllers_HomeController_loginHandler5_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
+  private[this] lazy val controllers_HomeController_querySelectionHandler5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("querySelection")))
   )
-  private[this] lazy val controllers_HomeController_loginHandler5_invoker = createInvoker(
-    HomeController_1.loginHandler(),
+  private[this] lazy val controllers_HomeController_querySelectionHandler5_invoker = createInvoker(
+    HomeController_1.querySelectionHandler(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "loginHandler",
+      "querySelectionHandler",
       Nil,
       "GET",
-      this.prefix + """login""",
+      this.prefix + """querySelection""",
       """""",
       Seq()
     )
@@ -202,9 +202,9 @@ class Routes(
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:7
-    case controllers_HomeController_index0_route(params@_) =>
+    case controllers_HomeController_querySelectionHandler0_route(params@_) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_1.index())
+        controllers_HomeController_querySelectionHandler0_invoker.call(HomeController_1.querySelectionHandler())
       }
   
     // @LINE:9
@@ -232,9 +232,9 @@ class Routes(
       }
   
     // @LINE:17
-    case controllers_HomeController_loginHandler5_route(params@_) =>
+    case controllers_HomeController_querySelectionHandler5_route(params@_) =>
       call { 
-        controllers_HomeController_loginHandler5_invoker.call(HomeController_1.loginHandler())
+        controllers_HomeController_querySelectionHandler5_invoker.call(HomeController_1.querySelectionHandler())
       }
   
     // @LINE:19

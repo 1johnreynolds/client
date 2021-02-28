@@ -4,17 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccedc1b1-c9f3-4b33-8019-4ffbf616e5f1" name="Default Changelist" comment="Fixed handler">
+    <list default="true" id="ccedc1b1-c9f3-4b33-8019-4ffbf616e5f1" name="Default Changelist" comment="Now response feeds value from query 1 to the response page when &quot;title&quot; is submitted on query1 page. Shows how to feed data from page to page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/querySelection.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/query1.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/query1.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/response.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/response.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/index.template.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/login.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/login.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/query1.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/query1.template.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/response.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/response.template.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Lab-2-Ebean/Frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,13 +102,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Play 2 App.Test">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,7 +209,8 @@
       <workItem from="1580274672590" duration="2140000" />
       <workItem from="1613436439127" duration="317000" />
       <workItem from="1614014314209" duration="249000" />
-      <workItem from="1614016310431" duration="16018000" />
+      <workItem from="1614016310431" duration="18306000" />
+      <workItem from="1614445962405" duration="8765000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit Advance requirement 4,5">
       <created>1573100508310</created>
@@ -230,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614036738776</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Now response feeds value from query 1 to the response page when &quot;title&quot; is submitted on query1 page. Shows how to feed data from page to page.">
+      <created>1614038154442</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614038154442</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,16 +270,12 @@
     <MESSAGE value="Changes done to support multi keyword search" />
     <MESSAGE value="Initial" />
     <MESSAGE value="Fixed handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed handler" />
+    <MESSAGE value="Now response feeds value from query 1 to the response page when &quot;title&quot; is submitted on query1 page. Shows how to feed data from page to page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now response feeds value from query 1 to the response page when &quot;title&quot; is submitted on query1 page. Shows how to feed data from page to page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/controllers/HomeController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/utils/HttpUtil.java</url>
           <line>23</line>

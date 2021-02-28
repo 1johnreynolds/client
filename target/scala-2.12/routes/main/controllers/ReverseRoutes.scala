@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/c18jo/IdeaProjects/SOSE Lab-2 Play Frontend-Backend/Frontend/conf/routes
-// @DATE:Mon Feb 22 16:48:07 MST 2021
+// @DATE:Sat Feb 27 14:32:08 MST 2021
 
 import play.api.mvc.Call
 
@@ -21,6 +21,20 @@ package controllers {
     def query3(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "query3")
+    }
+  
+    // @LINE:7
+    def querySelectionHandler(): Call = {
+    
+      () match {
+      
+        // @LINE:7
+        case ()  =>
+          
+          Call("GET", _prefix)
+      
+      }
+    
     }
   
     // @LINE:15
@@ -45,18 +59,6 @@ package controllers {
     def queryOneHandler(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "response")
-    }
-  
-    // @LINE:17
-    def loginHandler(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "login")
-    }
-  
-    // @LINE:7
-    def index(): Call = {
-      
-      Call("GET", _prefix)
     }
   
   }
